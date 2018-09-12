@@ -1,4 +1,7 @@
 This is a test file to see if I can finall use Git Bash like a normal human
 being. Let's see if this shit finally works out. Then I can link all of my
 things between desktops and stuff I think. I'm not completley sure. But, I will not be losing homework like I have done in the past, or have late versions of 
-homework, hopefully. 
+homework, hopefully.
+
+
+this is the change that I am going to commit to my github repo
