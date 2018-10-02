@@ -6,7 +6,7 @@
 radius = 1.3
 height = 4.83
 pi = 3.14
-volume = (pi * (r**2)) * h
+volume = (pi * (radius**2)) * height
 
-print("volume of a soda can in cubic inches: " + volume)
+print("volume of a soda can in cubic inches: " + str(volume))
 
