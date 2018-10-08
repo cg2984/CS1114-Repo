@@ -13,4 +13,7 @@ while randNum != guessNum:
   elif guessNum < randNum:
     print("The number was too low, go higher")
     guessNum = int(input("Enter a number: ")
+  elif not guessNum.isdigit():
+    print("Please enter a number")
+    guessNum = int(input("Enter a number: ")
 print("Congrats! You guessed the number!")
