@@ -7,9 +7,8 @@ n = int(input("Enter a positive integer: "))
 inital = 3
 multiples = 0
 factor = 0
-while n < 10:
+for i in range(n):
   factor += 1
   multiples = intital*factor
   print(multiples)
 print("Done")
-  

@@ -4,11 +4,14 @@
 #10-7-18
 
 n = int(input("Enter a positive integer: "))
-inital = 3
+initial = 3
 multiples = 0
 factor = 0
-for i in range(0,n):
+i = 0
+while i < n:
   factor += 1
-  multiples = intital*factor
+  multiples = initial*factor
   print(multiples)
+  i+=1
 print("Done")
+  
