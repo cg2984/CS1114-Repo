@@ -15,9 +15,15 @@ def rotate(s, n):
     newString+=s[i]
   return newString
 
+#problem c
+def all_rotations(s):
+    newWord = " "
+    for i in range(len(s)):
+        newWord = rotate(s, i)
+        print(newWord)
+    
 def main():
-  string = input("Enter a string")
-  num = int(input("Enter a number"))
-  print(rotate(string, num))
+  string = input("Enter a string: ")
+  all_rotations(string)
 
 main()
