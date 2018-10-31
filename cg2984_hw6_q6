@@ -1,0 +1,13 @@
+def count_doubled(s):
+    count = 0
+    for i in range(len(s)-1):
+        if s[i] == s[i+1]:
+            count+=1
+    print("Number of double letters:", count)
+
+def main():
+    string = input("Enter a string: ")
+    count_doubled(string)
+main()
+            
+        
