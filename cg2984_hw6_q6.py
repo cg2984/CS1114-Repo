@@ -1,3 +1,8 @@
+#Clara Gilligan
+#Homework 6
+#CS 1114
+#10/30/18
+
 def count_doubled(s):
     count = 0
     for i in range(len(s)):
