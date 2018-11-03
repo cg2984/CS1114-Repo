@@ -1,3 +1,8 @@
+#Clara Gilligan
+#Homework 6
+#CS 1114
+#10/30/18
+
 #problem a
 def rotate(s): 
   newString = " "
