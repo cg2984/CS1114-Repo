@@ -1,3 +1,8 @@
+#Clara Gilligan
+#Homework 6
+#CS 1114
+#10/30/18
+
 def sum_range(s, e):
     total = s
     for i in range(s+1,e+1):
