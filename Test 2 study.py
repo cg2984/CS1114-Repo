@@ -62,3 +62,16 @@ def AlphabetSoup(string):
     
 # keep this function call here  
 print AlphabetSoup(raw_input()) 
+
+#Problem 5
+def LetterCapitalize(string):
+    stringList = string.split()
+    newString = []
+    for word in stringList: 
+        newWord = word[0].upper() + word[1:]
+        newString.append(newWord)
+    newString = " ".join(newString)
+    return newString
+    
+# keep this function call here  
+print LetterCapitalize(raw_input())  
