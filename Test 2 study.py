@@ -74,4 +74,22 @@ def LetterCapitalize(string):
     return newString
     
 # keep this function call here  
-print LetterCapitalize(raw_input())  
+print LetterCapitalize(raw_input()) 
+
+#Problem 6 
+def LetterChanges(string): 
+    newString = ""
+    for i in range(len(string)): 
+        if string[i].isalpha():
+            newChara = chr(ord(string[i])+1)
+            if newChara == "a" or newChara =="e" or newChara == "i" or newChara == "o" or newChara == "u"
+                newString+=newChara.upper()
+            else: 
+                newString+=newChara
+        else:
+            newString+=string[i]
+            
+    return newString
+    
+# keep this function call here  
+print LetterChanges(raw_input())
