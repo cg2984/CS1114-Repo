@@ -30,7 +30,7 @@ def main():
     string = input("Enter a string: ")
     print(xyz_there(string))
 main()
-#P
+#Problem 3
 def LongestWord(sen): 
     longestLen = 0
     longestWord = ''
@@ -46,3 +46,19 @@ def LongestWord(sen):
     return longestWord   
 
 print LongestWord(raw_input()) 
+#Problem 4
+def AlphabetSoup(string): 
+    alphaList = []
+    alphaSorted = []
+    smallestChara = 124
+    smallestPlace = 0
+    for letter in string:
+        alphaList.append(letter)
+    for i in range(alphaList): 
+        if ord(alphaList[i]) < smallestChara:
+            smallestList = i
+            smallestChara = ord(alphaList[i])
+    return alphaSorted
+    
+# keep this function call here  
+print AlphabetSoup(raw_input()) 
