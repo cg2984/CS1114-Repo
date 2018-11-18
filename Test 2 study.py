@@ -30,3 +30,19 @@ def main():
     string = input("Enter a string: ")
     print(xyz_there(string))
 main()
+#P
+def LongestWord(sen): 
+    longestLen = 0
+    longestWord = ''
+    wordList = sen.split()
+    for word in wordList: 
+        tempWord = ''
+        for letter in word: 
+            if letter.isalnum():
+                tempWord+=letter
+        if len(tempWord)> longestLen:
+            longestLen = len(tempWord)
+            longestWord = tempWord
+    return longestWord   
+
+print LongestWord(raw_input()) 
