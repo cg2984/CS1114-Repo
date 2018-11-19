@@ -105,3 +105,34 @@ def SimpleSymbols(string):
   return isCorrect
 string = input("Enter a string: ")
 print(SimpleSymbols(string))
+
+#Problem 8
+def right_shift(message, shift):
+  diff = 0
+  newMsg = ""
+  for letter in message:
+    if letter.isalpha():
+      newMsg+=chr(ord(letter)+shift).lower()
+    else:
+      newMsg+=letter
+  return newMsg
+def left_shift(message, shift): 
+  newMsg = ""
+  for letter in message:
+    if letter.isalpha():
+      newLetter = chr(ord(letter)-shift).lower()
+      if ord(newLetter) > ord("z"):
+        diff = ord("z") - ord(newLetter) 
+        newLetter = ord("a")+diff 
+      elif ord(newLetter) < ord("a"): 
+        diff = ord("a") - ord(newLetter) 
+        newLetter = ord("a")+diff 
+      newMsg+=newLetter
+    else:
+      newMsg+=letter
+  return newMsg
+def main():
+  message = input("Enter message: ")
+  shift = int(input("Enter shift: "))
+  print(left_shift(message,shift))
+main()
