@@ -113,7 +113,9 @@ def right_shift(message, shift):
     if letter.isalpha():
       newLetter = chr(ord(letter)-shift).lower()
       if ord(newLetter) > ord("z"):
-        diff = ord("z") - ord(newLetter) 
+        print("New Letter",newLetter)
+        diff =  ord(newLetter) - ord("z")
+        print("Difference",diff)
         newLetter = ord("a")+diff 
       elif ord(newLetter) < ord("a"): 
         diff = ord("z") - ord(newLetter) 
@@ -140,5 +142,5 @@ def left_shift(message, shift):
 def main():
   message = input("Enter message: ")
   shift = int(input("Enter shift: "))
-  print(right_shift(message,shift))
+  print(left_shift(message,shift))
 main()
