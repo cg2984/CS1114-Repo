@@ -107,12 +107,18 @@ string = input("Enter a string: ")
 print(SimpleSymbols(string))
 
 #Problem 8
-def right_shift(message, shift):
-  diff = 0
+def right_shift(message, shift): 
   newMsg = ""
   for letter in message:
     if letter.isalpha():
-      newMsg+=chr(ord(letter)+shift).lower()
+      newLetter = chr(ord(letter)-shift).lower()
+      if ord(newLetter) > ord("z"):
+        diff = ord("z") - ord(newLetter) 
+        newLetter = ord("a")+diff 
+      elif ord(newLetter) < ord("a"): 
+        diff = ord("z") - ord(newLetter) 
+        newLetter = ord("a")+diff 
+      newMsg+=newLetter
     else:
       newMsg+=letter
   return newMsg
@@ -125,7 +131,7 @@ def left_shift(message, shift):
         diff = ord("z") - ord(newLetter) 
         newLetter = ord("a")+diff 
       elif ord(newLetter) < ord("a"): 
-        diff = ord("a") - ord(newLetter) 
+        diff = ord("z") - ord(newLetter) 
         newLetter = ord("a")+diff 
       newMsg+=newLetter
     else:
@@ -134,5 +140,5 @@ def left_shift(message, shift):
 def main():
   message = input("Enter message: ")
   shift = int(input("Enter shift: "))
-  print(left_shift(message,shift))
+  print(right_shift(message,shift))
 main()
