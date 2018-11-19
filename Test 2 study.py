@@ -93,3 +93,15 @@ def LetterChanges(string):
     
 # keep this function call here  
 print LetterChanges(raw_input())
+#Problem 7
+def SimpleSymbols(string): 
+  isCorrect = False
+  for i in range(len(string)):
+    if string[i].isalpha() and i > 0 and i < len(string):
+      if string[i+1] == "+" and string[i-1] == "+":
+        isCorrect = True
+    elif string[i].isalpha and i == 0 and i < len(string):
+      isCorrect = False
+  return isCorrect
+string = input("Enter a string: ")
+print(SimpleSymbols(string))
